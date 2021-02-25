@@ -1,0 +1,51 @@
+.row {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.row_posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row_poster {
+    object-fit: contain;
+    max-height: 100px;
+    width: 100%;
+    transition: all 0.5s;
+    margin-right: 10px;
+}
+
+.row_poster:hover {
+    transform: scale(1.05);
+}
+
+.row_arrowRight .MuiSvgIcon-root {
+    position:absolute;
+    right: 0;
+    height: 240px;
+    color: white;
+}
+
+.row_arrowLeft .MuiSvgIcon-root {
+    position:absolute;
+    left: 15px;
+    height: 240px;
+    color: white;
+}
+
+.row_posterLarge {
+    max-height: 250px;
+}
+
+.row_posterLarge:hover {
+    max-height: 250px;
+    transform: scale(1.1);
+}
