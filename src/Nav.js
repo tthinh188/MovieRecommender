@@ -3,12 +3,12 @@ import "./Nav.css"
 
 function Nav() {
 
-    const [logo, setLogo] = useState(" Movie Recommender ")
+    const [logo, setLogo] = useState("      Movie Recommender by Thinh Phan      ")
     const [show, handleShow] = useState(false);
 
     const animateString = setTimeout( () => {
-        setLogo(logo[logo.length-1] + logo.substring(0,logo.length-1))
-    }, 700)
+        setLogo(logo[logo.length-2] + logo[logo.length-1] + logo.substring(0,logo.length-2))
+    }, 400)
 
     useEffect(() =>{
         window.addEventListener("scroll",() =>{
