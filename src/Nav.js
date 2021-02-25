@@ -6,7 +6,7 @@ function Nav() {
     const [logo, setLogo] = useState("      Movie Recommender by Thinh Phan      ")
     const [show, handleShow] = useState(false);
 
-    const animateString = setTimeout( () => {
+    setTimeout( () => {
         setLogo(logo[logo.length-2] + logo[logo.length-1] + logo.substring(0,logo.length-2))
     }, 400)
 

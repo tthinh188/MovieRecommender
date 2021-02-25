@@ -49,3 +49,13 @@
     max-height: 250px;
     transform: scale(1.1);
 }
+
+@media (max-width: 480px) {
+    .row_arrowRight .MuiSvgIcon-root {
+        right: -100px;
+    }
+    
+    .row_arrowLeft .MuiSvgIcon-root {
+        left: -100px;
+    }
+}
